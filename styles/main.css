@@ -4,6 +4,9 @@ body{
   padding : 0;
   margin : 0;
 }
+a{
+  color: blue;
+}
 
 #menufond{
   width: 100%;
