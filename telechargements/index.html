@@ -17,4 +17,46 @@
         </header>
         <h1 align="center">Téléchargement</h1>
         <br>
+            <script type="text/javascript">
+function ACTIONMENUACORDION (obj)
+{
+var nbSsmenu = SOUSMENUACORDIONOUVERT.length;
+for (ix = 0; ix < nbSsmenu; ix++)
+{
+if(SOUSMENUACORDIONOUVERT[ix]==true && obj!=ix)
+{
+document.getElementById('SSMENUACORDION['+ix+']').style.display='none';
+SOUSMENUACORDIONOUVERT[ix]=false;
+}
+}
+
+if(SOUSMENUACORDIONOUVERT[obj]!=true)
+{
+document.getElementById('SSMENUACORDION['+obj+']').style.display='block';
+SOUSMENUACORDIONOUVERT[obj]=true;
+}
+else
+{
+document.getElementById('SSMENUACORDION['+obj+']').style.display='none';
+SOUSMENUACORDIONOUVERT[obj]=false;
+}
+
+}
+var SOUSMENUACORDIONOUVERT=new Array();
+</script>
+<table border="0" cellpadding="0" cellspacing="0" style="width:160px; background-color:#F2F2F2; height:40px; cursor:pointer;">
+<tr><td style="text-align:center;" onclick="ACTIONMENUACORDION('0')">
+TITRE DE MA RUBRIQUE
+</td></tr>
+<tr><td style=" text-align:center; " valign="top">
+<div id="SSMENUACORDION[0]" style="display:none" >
+<p style="text-align:center;"><a href="ADRESSE DE LA PAGE 1">NOM PAGE 1</a></p>
+<p style="text-align:center;"><a href="ADRESSE DE LA PAGE 2">NOM PAGE 2</a></p>
+<p style="text-align:center;"><a href="ADRESSE DE LA PAGE 3">NOM PAGE 3</a></p>
+</div>
+</td></tr></table>
+<script type="text/javascript">
+SOUSMENUACORDIONOUVERT[0]=false;
+</script>
+
 </body></html>
