@@ -18,5 +18,165 @@
             </div>
         </header>
         <h1 align="center">Téléchargements</h1>
+        <div class="container is-fluid">
+            <div class="columns is-gapless is-mobile">
+    <div class="column is-narrow is-hidden-mobile">
+        Vous êtes ici    </div>
+    <div class="column">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+
+                <li class="is-active"><a>Téléchargements</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</div><h1>Téléchargements </h1>
+<h2>Informations</h2>
+<p>PlayOnLinux utilise principalement le projet <a href="http://www.winehq.org">WineHQ</a>. Si vous voulez les aider en obtenant un support professionnel pour wine, vous pouvez envisager d'acheter un produit <a href="http://www.codeweavers.com/">codeweavers</a>.</p> 
+<p>Nous aimerions aussi remercier les projets <a href="http://www.scummvm.org">ScummVM</a> et <a href="http://www.dosbox.com">DOSBox</a></p>
+<h2>Version de développement</h2>
+<p>Pour obtenir la version de développement, ouvrez un terminal, et tapez :</p>
+<kbd>git clone https://github.com/PlayOnLinux/POL-POM-4</kbd>
+<div class="grandespace"></div>
+<h2>Paquets</h2>
+        <div class="presentation_item  pdownload" onclick="pres_show(1)"><img src="https://www.playonlinux.com/download/img/package-pol-generic.png" alt="key" style="width:32px"><span class="title">Toutes les distributions</span></div>
+<div id="pres_item1" class="presentation_item_hidden" style="display: none;">
+<h2>Paquets génériques</h2>
+<h3>Fichiers .tar.gz</h3>
+<p>Vos devez extraire ces fichiers et éxéctuer "./playonlinux".</p>
+<!-- Last version : 4.3.4
+ -->
+<p>PlayOnLinux : <a href="https://www.playonlinux.com/script_files/PlayOnLinux/4.3.4
+/PlayOnLinux_4.3.4
+.tar.gz">PlayOnLinux_4.3.4
+.tar.gz</a></p>
+</div>
+    	        <div class="presentation_item  pdownload" onclick="pres_show(2)"><img src="https://www.playonlinux.com/download/img/package-pol-archlinux.png" alt="key" style="width:32px"><span class="title">Archlinux</span></div>
+<div id="pres_item2" class="presentation_item_hidden" style="display: none;">
+<h2>Arch Linux</h2>
+<h3>Ajouter le dépôt Arch Linux FR</h3>
+<p>Ajoutez au fichier <b>/etc/pacman.conf</b> les lignes suivantes (architecture i386) :</p>
+<div class="codeconsole"><code>[archlinuxfr]<br>
+Server = http://repo.archlinux.fr/i686</code></div>
+
+<p>Architecture x86_64</p>
+<div class="codeconsole"><code>[archlinuxfr]<br>
+Server = http://repo.archlinux.fr/x86_64</code></div>
+
+<h3>Installer PlayOnLinux</h3>
+<p>Tapez la commande suivante :</p>
+<div class="codeconsole"><code>pacman -Syu playonlinux</code></div>
+</div>
+    	        <div class="presentation_item  pdownload" onclick="pres_show(3)"><img src="https://www.playonlinux.com/download/img/package-pol-debian.png" alt="key" style="width:32px"><span class="title">Debian</span></div>
+<div id="pres_item3" class="presentation_item_hidden" style="display: none;">
+<h2>Debian</h2>
+<h3>Fichiers deb :</h3>
+<!-- Last version : 4.3.4
+ -->
+<p>PlayOnLinux : <a href="https://www.playonlinux.com/script_files/PlayOnLinux/4.3.4
+/PlayOnLinux_4.3.4
+.deb">PlayOnLinux_4.3.4
+.deb</a></p>
+
+<p><span style="color:red;font-weight:bold">Utilisateurs de wheezy : Vous devez installer le paquet wine:i386 pour faire fonctionner PlayOnLinux</span></p>
+
+ 
+<h3>Avec le dépôt Stretch</h3>
+<p>Tapez les commandes suivantes :</p>
+<kbd>wget -q "http://deb.playonlinux.com/public.gpg" -O- | apt-key add -<br>
+wget http://deb.playonlinux.com/playonlinux_stretch.list -O /etc/apt/sources.list.d/playonlinux.list<br>
+apt-get update<br>
+apt-get install playonlinux</kbd>
+
+ 
+<h3>Avec le dépôt Jessie</h3>
+<p>Tapez les commandes suivantes :</p>
+<kbd>wget -q "http://deb.playonlinux.com/public.gpg" -O- | apt-key add -<br>
+wget http://deb.playonlinux.com/playonlinux_jessie.list -O /etc/apt/sources.list.d/playonlinux.list<br>
+apt-get update<br>
+apt-get install playonlinux</kbd>
+
+</div>
+    	        <div class="presentation_item  pdownload" onclick="pres_show(4)"><img src="https://www.playonlinux.com/download/img/package-pol-fedora.png" alt="key" style="width:32px"><span class="title">Fedora</span></div>
+<div id="pres_item4" class="presentation_item_hidden">
+<h2>Fedora</h2>
+<p>Rendez-vous <a href="http://rpm.playonlinux.com/">ici</a> et installez le paquet playonlinux-yum</p>
+</div>
+    	        <div class="presentation_item  pdownload" onclick="pres_show(5)"><img src="https://www.playonlinux.com/download/img/package-pol-frugalware.png" alt="key" style="width:32px"><span class="title">Frugalware</span></div>
+<div id="pres_item5" class="presentation_item_hidden">
+<h2>Frugalware</h2>
+<p>Tapez la commande suivante</p>
+<div class="codeconsole"><code>pacman-g2 -S playonlinux</code></div>
+</div>
+    	        <div class="presentation_item  pdownload" onclick="pres_show(6)"><img src="https://www.playonlinux.com/download/img/package-pol-ubuntu.png" alt="key" style="width:32px"><span class="title">Ubuntu</span></div>
+<div id="pres_item6" class="presentation_item_hidden">
+<h2>Ubuntu</h2>
+<h3>Fichiers .deb :</h3>
+<!-- Last version : 4.3.4
+ -->
+<p>PlayOnLinux : <a href="https://www.playonlinux.com/script_files/PlayOnLinux/4.3.4
+/PlayOnLinux_4.3.4
+.deb">PlayOnLinux_4.3.4
+.deb</a></p>
+
+<span style="color:red;font-weight:bold">Utilisateurs de precise (et superieur) : Vous devez installer le paquet wine:i386 pour faire fonctionner PlayOnLinux</span>
+
+
+ 
+<h3>Avec le dépôt Cosmic</h3>
+<p>Tapez les commandes suivantes :</p>
+<kbd>wget -q "http://deb.playonlinux.com/public.gpg" -O- | sudo apt-key add -<br>
+sudo wget http://deb.playonlinux.com/playonlinux_cosmic.list -O /etc/apt/sources.list.d/playonlinux.list<br>
+sudo apt-get update<br>
+sudo apt-get install playonlinux</kbd>
+
+ 
+<h3>Avec le dépôt Bionic</h3>
+<p>Tapez les commandes suivantes :</p>
+<kbd>wget -q "http://deb.playonlinux.com/public.gpg" -O- | sudo apt-key add -<br>
+sudo wget http://deb.playonlinux.com/playonlinux_bionic.list -O /etc/apt/sources.list.d/playonlinux.list<br>
+sudo apt-get update<br>
+sudo apt-get install playonlinux</kbd>
+
+ 
+<h3>Avec le dépôt Xenial</h3>
+<p>Tapez les commandes suivantes :</p>
+<kbd>wget -q "http://deb.playonlinux.com/public.gpg" -O- | sudo apt-key add -<br>
+sudo wget http://deb.playonlinux.com/playonlinux_xenial.list -O /etc/apt/sources.list.d/playonlinux.list<br>
+sudo apt-get update<br>
+sudo apt-get install playonlinux</kbd>
+
+ 
+<h3>Avec le dépôt Trusty</h3>
+<p>Tapez les commandes suivantes :</p>
+<kbd>wget -q "http://deb.playonlinux.com/public.gpg" -O- | sudo apt-key add -<br>
+sudo wget http://deb.playonlinux.com/playonlinux_trusty.list -O /etc/apt/sources.list.d/playonlinux.list<br>
+sudo apt-get update<br>
+sudo apt-get install playonlinux</kbd>
+
+ 
+<h3>Avec le dépôt Saucy</h3>
+<p>Tapez les commandes suivantes :</p>
+<kbd>wget -q "http://deb.playonlinux.com/public.gpg" -O- | sudo apt-key add -<br>
+sudo wget http://deb.playonlinux.com/playonlinux_saucy.list -O /etc/apt/sources.list.d/playonlinux.list<br>
+sudo apt-get update<br>
+sudo apt-get install playonlinux</kbd>
+
+ 
+<h3>Avec le dépôt Precise</h3>
+<p>Tapez les commandes suivantes :</p>
+<kbd>wget -q "http://deb.playonlinux.com/public.gpg" -O- | sudo apt-key add -<br>
+sudo wget http://deb.playonlinux.com/playonlinux_precise.list -O /etc/apt/sources.list.d/playonlinux.list<br>
+sudo apt-get update<br>
+sudo apt-get install playonlinux</kbd>
+
+</div>
+    	<div class="espace"></div>
+<div id="dl_content"></div>
+<div class="espace"></div>
+
+
+</div>
     </body>
 </html>
