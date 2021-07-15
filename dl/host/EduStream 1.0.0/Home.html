@@ -7,25 +7,7 @@
   </head>
   <body>
     <section id="bodyContent">
-      <img src="bg.jpg" id="fondecran" />
       <h2>EduStream</h2>
     </section>
-    <script>
-      $(window).load(function() { 
- var theWindow = $(window),
- fond = $(#fondecran),
- ratioImage = $bg.width() / $bg.height();
- function redimensionnerFond() {
- //On comparer le ratio de l'image à celui de la fenêtre
- if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
- $fond.removeClass().addClass('touteLaHauteur');
- } else {
- $fond.removeClass().addClass('bgwidth');
- }
- }
- //On lie cette fonction au redimensionnement de la fenêtre et on déclenche l'événement
- theWindow.resize(redimensionnerFond).trigger(resize);
-});
-    </script>
   </body>
 </html>
